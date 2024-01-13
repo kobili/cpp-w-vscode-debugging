@@ -2,19 +2,17 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: clang++ build active file",
+            "label": "C/C++: clang++ build project",
             "command": "/usr/bin/clang++",
             "args": [
                 "-fcolor-diagnostics",
                 "-fansi-escape-codes",
                 "-g",
-                "${file}",
+                "${workspaceFolder}/src/main.cpp",
                 "-o",
-                "${fileDirname}/debug/${fileBasenameNoExtension}"
+                "${workspaceFolder}/debug/main"
             ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
+            "options": {},
             "problemMatcher": [
                 "$gcc"
             ],
