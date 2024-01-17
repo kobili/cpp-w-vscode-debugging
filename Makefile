@@ -1,5 +1,5 @@
 build:
-	mkdir -p build; clang++ -o build/program src/main.cpp
+	mkdir -p dist; clang++ -o dist/program src/main.cpp
 
 run:
-	./build/program
+	./dist/program
